@@ -14,8 +14,15 @@ void loop() {
   nhietDo[0] = (adcValues[0] * 500.0) / 1023.0;
   adcValues[1] = analogRead(A1);
   nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
-  sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
+  //sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
+  Serial.print("sensorA0: ");
+  Serial.print(adcValues);
+  Serial.print("Nhiet do: ");
+  Serial.print(nhietDo);
+  Serial.print("chuoi: ");
   Serial.print(chuoi);
+  Serial.print("kenhA2: ");
+  Serial.print(kenhA2);
   delay(100);
 }
 
