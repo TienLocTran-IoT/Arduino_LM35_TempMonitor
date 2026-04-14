@@ -3,11 +3,14 @@
  * Mon: Mang Cam Bien - Tuan 03
  */
 
-int adcValues[2]; float nhietDo[2]; char chuoi[30];
+int adcValues[2]; float nhietDo[2]; char chuoi[30]; int kenhA2[2];
 
 
 void loop() {
   adcValues[0] = analogRead(A0);
+  
+  kenhA2[0] = analogRead(A2); //doc kenh A2
+  
   nhietDo[0] = (adcValues[0] * 500.0) / 1023.0;
   adcValues[1] = analogRead(A1);
   nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
