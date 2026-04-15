@@ -1,4 +1,6 @@
 # Arduino LM35 Temperature Monitor
+Tác giả: Trần Tiến Lộc
+Link trang cá nhân: (https://github.com/TienLocTran-IoT/TranTienLoc.github.io)
 
 ## 📖 Mô tả
 Dự án đo nhiệt độ bằng cảm biến LM35, hiển thị dữ liệu qua Serial và định dạng JSON để dễ dàng tích hợp với các ứng dụng IoT.
